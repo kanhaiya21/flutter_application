@@ -214,7 +214,7 @@ class _MyLoginState extends State<MyLogin> {
                         onTap: (() => Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => registration()))),
+                                builder: (context) => forgotpass()))),
                         child: Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 30.0),
                           child: Row(
