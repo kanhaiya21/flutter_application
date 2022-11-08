@@ -2,8 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/ForgotPassword/forgotpass.dart';
+import 'package:flutter_application_1/homepage/homepage.dart';
+import 'package:flutter_application_1/register/views/register_view.dart';
 import 'package:flutter_application_1/user&admin_profile/profile.dart';
-import 'register/views/register_view.dart';
 
 class MyLogin extends StatefulWidget {
   const MyLogin({Key? key}) : super(key: key);
@@ -128,7 +129,7 @@ class _MyLoginState extends State<MyLogin> {
                           ),
                           hintText: 'PASSWORD',
                           fillColor: Colors.white10,
-                          prefixIcon: Icon(Icons.lock),
+                          prefixIcon: const Icon(Icons.lock),
                           filled: true,
                           suffixIcon: GestureDetector(
                             onTap: () {
@@ -149,10 +150,8 @@ class _MyLoginState extends State<MyLogin> {
 
                 GestureDetector(
                   onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const forgotpass()));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => forgotpass()));
                   },
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 30),
